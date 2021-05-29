@@ -3,6 +3,7 @@ const { Worker }  = require('worker_threads');;
 let workDir = __dirname+"/dbWorker.js";
 
 const axios = require('axios');
+const cheerio = require('cheerio');
 
 const mainFunc = async () => {
     const url = "https://www.iban.com/exchange-rates";
