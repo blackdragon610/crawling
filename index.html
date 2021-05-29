@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script src="/src/main.js"></script>
+	<script src="/src/dbWorker.js"></script>
+	<div>
+		<button id="start">Start</button>
+	</div>
+	<script type="text/javascript">
+		$(window).on('load', function () {
+			$("#start").click(function () {
+				console.log('clicked');
+				mainFunc();
+			});
+		});
+	</script>
+</body>
